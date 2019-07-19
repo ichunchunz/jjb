@@ -8,9 +8,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>聚鲸宝首页</title>
     <link rel="stylesheet" type="text/css" href="styles/framework.css">
-    <link rel="stylesheet" type="text/css" href="../../../css-OpenSans300300i400400i600600.css">
     <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
     <link rel="manifest" href="/manifest.json">
+    <script src="/pwabuilder-sw-register.js"></script>
 </head>
 
 <body class="theme-light" data-highlight="blue2">
@@ -229,28 +229,13 @@
             <a href="http://cccc123.yourhcunit.net/"><i class="fa fa-envelope"></i><span>商城</span></a>
             <div class="clear"></div>
         </div>
-        <div id="menu-navigation" class="menu-box" data-menu-type="menu-box-left" data-menu-width="280" data-menu-load="menu-sidebar-left.html" data-menu-active="nav-homepages" data-menu-effect="menu-reveal">
-        </div>
         <div id="menu-contact" class="menu-box" data-menu-type="menu-box-right" data-menu-width="280" data-menu-load="menu-sidebar-right.html" data-menu-effect="menu-reveal">
-        </div>
-        <div id="menu-colors" class="menu-box round-small" data-menu-type="menu-box-bottom" data-menu-load="menu-colors.html" data-menu-height="400" data-menu-effect="menu-over">
-        </div>
-        <div id="menu-language" class="menu-box round-small" data-menu-type="menu-box-bottom" data-menu-load="menu-language.html" data-menu-height="350" data-menu-effect="menu-over">
         </div>
         <div class="menu-hider"></div>
     </div>
     <script src="scripts/jquery.js"></script>
     <script src="scripts/plugins.js"></script>
     <script src="scripts/custom.js"></script>
-    <script>
-        // 检测浏览器是否支持SW
-        if (navigator.serviceWorker != null) {
-            navigator.serviceWorker.register('sw.js')
-                .then(function(registartion) {
-                    console.log('支持sw:', registartion.scope)
-                })
-        }
-    </script>
 </body>
 
 </html>
