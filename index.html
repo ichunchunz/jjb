@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="../../../css-OpenSans300300i400400i600600.css">
     <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
     <link rel="manifest" href="/manifest.json">
-    <script src="/pwabuilder-sw-register.js"></script>
 </head>
 
 <body class="theme-light" data-highlight="blue2">
@@ -243,6 +242,15 @@
     <script src="scripts/jquery.js"></script>
     <script src="scripts/plugins.js"></script>
     <script src="scripts/custom.js"></script>
+    <script>
+        // 检测浏览器是否支持SW
+        if (navigator.serviceWorker != null) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function(registartion) {
+                    console.log('支持sw:', registartion.scope)
+                })
+        }
+    </script>
 </body>
 
 </html>
