@@ -1,0 +1,20 @@
+{
+    "short_name" : "聚鲸宝",
+    "description" : "致力于商家和顾客聚合的公司。",
+  "icons": [
+    {
+      "src": "/images/icons/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "theme_color": "#FFFFFF"
+}
